@@ -15,6 +15,7 @@
     "babel-preset-stage-0": "^6.3.13",
     "history": "^1.17.0",
     "react": "^0.14.6",
+    "express": "^4.15.4",
     "react-dom": "^0.14.6",
     "react-router": "^1.0.3",
     "webpack": "^1.12.9",
@@ -23,7 +24,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "./node_modules/.bin/webpack-dev-server --content-base src --inline --hot",
+    "build": "webpack --config webpack.config.js",
+    "start": "npm run build && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
